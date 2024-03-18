@@ -46,7 +46,7 @@
                 " None",
                 "",
                 " Example:",
-                " [[bob, ted], false] call etr_operation_main_fnc_example",
+                " [[bob, ted], false] call etr_ranks_main_fnc_example",
                 "",
                 " Public: No"
             ]

@@ -18,6 +18,3 @@ exclude = [
 
 [hemtt.release]
 archive = false
-
-[asc]
-enabled = true
