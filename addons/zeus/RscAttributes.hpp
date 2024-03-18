@@ -1,17 +1,8 @@
 class RscControlsGroup;
 class RscControlsGroupNoScrollbars;
 class RscText;
-class RscListBox;
 class RscCombo;
-class RscEdit;
-class RscXSliderH;
-class RscCheckBox;
-class RscActivePicture;
-class RscMapControl;
-class RscPicture;
-class ctrlToolbox;
 class RscButton;
-class ctrlCombo;
 
 class RscDisplayAttributes {
     class Controls {
@@ -35,7 +26,7 @@ class GVAR(RscEnhancedRank): RscDisplayAttributes {
             class Controls {
                 class faction: RscControlsGroupNoScrollbars {
                     onSetFocus = QUOTE(_this call FUNC(ui_faction););
-                    idc = 86946;
+                    idc = 98000;
                     x = 0;
                     y = 0;
                     w = QUOTE(W_PART(26));
@@ -43,7 +34,7 @@ class GVAR(RscEnhancedRank): RscDisplayAttributes {
                     class controls {
                         class Label: RscText {
                             idc = -1;
-                            displayName = "Insignia Faction";
+                            text = "Insignia Faction";
 						    tooltip = "Which rank insignia faction to use for this unit.";
                             x = 0;
                             y = QUOTE(H_PART(0.1));
@@ -51,7 +42,7 @@ class GVAR(RscEnhancedRank): RscDisplayAttributes {
                             h = QUOTE(H_PART(1));
                             colorBackground[] = {0, 0, 0, 0.5};
                         };
-                        class Value: ctrlCombo {
+                        class Value: RscCombo {
                             idc = 98100;
                             x = QUOTE(W_PART(10.1));
                             y = QUOTE(H_PART(0.1));
@@ -65,7 +56,7 @@ class GVAR(RscEnhancedRank): RscDisplayAttributes {
                 };
                 class icon: RscControlsGroupNoScrollbars {
                     onSetFocus = QUOTE(_this call FUNC(ui_icon););
-                    idc = 86947;
+                    idc = 98001;
                     x = 0;
                     y = QUOTE(H_PART(1.4));
                     w = QUOTE(W_PART(26));
@@ -73,7 +64,7 @@ class GVAR(RscEnhancedRank): RscDisplayAttributes {
                     class controls {
                         class Label: RscText {
                             idc = -1;
-                            displayName = "Insignia Icon";
+                            text = "Insignia Icon";
 						    tooltip = "Which rank insignia icon to use for this unit.";
                             x = 0;
                             y = QUOTE(H_PART(0.1));
@@ -81,7 +72,7 @@ class GVAR(RscEnhancedRank): RscDisplayAttributes {
                             h = QUOTE(H_PART(2));
                             colorBackground[] = {0, 0, 0, 0.5};
                         };
-                        class Value: ctrlCombo {
+                        class Value: RscCombo {
                             idc = 98101;
                             x = QUOTE(W_PART(10.1));
                             y = QUOTE(H_PART(0.1));

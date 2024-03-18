@@ -24,8 +24,8 @@ TRACE_1("Check",_this);
 
 params ["_unit","_rank"];
 
-_unit setVariable [QEGVAR(3den,insigniaFaction), _rank#0, true];
-_unit setVariable [QEGVAR(3den,insigniaIcon), _rank, true];
+_unit setVariable ["etr_ranks_insigniaFaction", _rank#0, true];
+_unit setVariable ["etr_ranks_insigniaIcon", _rank, true];
 [_unit, _rank] call EFUNC(functions,setIcon);
 
 nil

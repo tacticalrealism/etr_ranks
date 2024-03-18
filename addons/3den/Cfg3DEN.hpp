@@ -126,8 +126,8 @@ class Cfg3DEN {
 		class AttributeCategories {
 			class State {
 				class Attributes {
-					class GVAR(insigniaFaction) {
-						property = QGVAR(insigniaFaction);
+					class etr_ranks_insigniaFaction {
+						property = "etr_ranks_insigniaFaction";
 						displayName = "Insignia Faction";
 						tooltip = "Which rank insignia faction to use for this unit.";
 						control = QGVAR(insigniaFaction);
@@ -137,8 +137,8 @@ class Cfg3DEN {
 						condition = "objectBrain";
 					};
 
-					class GVAR(insigniaIcon) {
-						property = QGVAR(insigniaIcon);
+					class etr_ranks_insigniaIcon {
+						property = "etr_ranks_insigniaIcon";
 						displayName = "Insignia Icon";
 						tooltip = "Which rank insignia icon to use for this unit.";
 						control = QGVAR(insigniaIcon);

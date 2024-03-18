@@ -21,9 +21,32 @@ TRACE_1("",_this);
 
 private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
 private _unit = attachedTo _logic;
-private _value = _unit getVariable [QEGVAR(3den,insigniaFaction), nil];
+private _value = _unit getVariable ["etr_ranks_insigniaFaction", nil];
 
 _control ctrlRemoveAllEventHandlers "setFocus";
+private _display = ctrlParent _control;
+
+// Check if target is valid.
+scopeName "Main";
+private _fnc_errorAndClose = {
+    params ["_msg"];
+    _display closeDisplay 0;
+    deleteVehicle _logic;
+    [objNull, _msg] call BIS_fnc_showCuratorFeedbackMessage;
+    breakOut "Main";
+};
+
+switch (false) do {
+    case !(isNull _unit): {
+        ["No object selected"] call _fnc_errorAndClose;
+    };
+    case (_unit isKindOf "CAManBase"): {
+        ["Only allowed to be used on infantry"] call _fnc_errorAndClose;
+    };
+    case (alive _unit): {
+        ["Only allowed on alive units"] call _fnc_errorAndClose;
+    };
+};
 
 private _ctrlCombo = _control controlsGroupCtrl 98100;
 
@@ -49,7 +72,6 @@ for '_i' from 0 to (lbsize _ctrlCombo - 1) do {
 	};
 };
 
-private _display = ctrlParent _control;
 private _ctrlButtonOK = _display displayCtrl 1; // IDC_OK
 
 // Specific onLoad stuff

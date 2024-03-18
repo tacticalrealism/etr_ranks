@@ -21,7 +21,7 @@ TRACE_1("",_this);
 
 private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
 private _unit = attachedTo _logic;
-private _value = _unit getVariable [QEGVAR(3den,insigniaIcon), nil];
+private _value = _unit getVariable ["etr_ranks_insigniaIcon", nil];
 
 _control ctrlRemoveAllEventHandlers "setFocus";
 
