@@ -1,0 +1,23 @@
+name = "ETR Enhanced Ranks"
+prefix = "etr_ranks"
+author = "European Tactical Realism"
+
+[properties]
+author = "European Tactical Realism"
+url = "https://tacticalrealism.eu/"
+
+[version]
+git_hash = 0
+
+[files]
+include = []
+exclude = [
+    "*.psd",
+    "*.png",
+]
+
+[hemtt.release]
+archive = false
+
+[asc]
+enabled = true
