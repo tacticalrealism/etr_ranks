@@ -25,7 +25,9 @@ _this spawn {
 	private _display = ctrlParent _control;
 	private _iconDisplay = _display displayCtrl 98101;
 
-	private _insigniaArray = "true" configClasses (configFile >> "etr_ranks_insignias" >> _data);
+	private _insigniaArray = configProperties [(configFile >> "etr_ranks_insignias" >> _data), "isClass _x"];
+
+	TRACE_1("insigniaArray",_insigniaArray);
 
 	// First clear the list.
 	lbClear _iconDisplay;

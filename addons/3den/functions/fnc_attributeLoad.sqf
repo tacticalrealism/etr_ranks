@@ -23,12 +23,17 @@ if (isNil "_value") then {
 
 TRACE_1("attributeLoad",_value);
 
-private _cfgValues = (configFile >> "etr_ranks_insignias");
+private _cfgValues = (configFile >> "etr_ranks_insignias"); 
 
 if (isclass _cfgValues) then {
 	{
-		_lbAdd = _ctrlCombo lbadd gettext (_x >> 'name');
-		_ctrlCombo lbsetdata [_lbadd, configName _x];
+		// Check if rank is replaced.
+		if (isText (_x >> "replace")) then {
+			if (_value isEqualTo (configName _x)) then {_value = (getText (_x >> "replace"))};
+		} else {
+			_lbAdd = _ctrlCombo lbadd getText (_x >> 'name');
+			_ctrlCombo lbsetdata [_lbadd, configName _x];
+		};
 	} foreach configproperties [_cfgValues,'isclass _x'];
 };
 
