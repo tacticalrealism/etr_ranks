@@ -37,6 +37,9 @@ if (isclass _cfgValues) then {
 	} foreach configproperties [_cfgValues,'isclass _x'];
 };
 
+// Sort the listbox.
+lbSort _ctrlCombo;
+
 for '_i' from 0 to (lbsize _ctrlCombo - 1) do {
 	if (_value isEqualTo (_ctrlCombo lbdata _i)) exitwith {
 		_ctrlCombo lbsetcursel _i;
