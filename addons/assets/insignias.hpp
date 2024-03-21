@@ -17,9 +17,10 @@ class etr_ranks_insignias {
             rank = -1;
         };
     };
-	class uk_army {
+
+    class uk_army {
         name = "UK Army";
-        values[] = {
+        values[] = {    // These values are used for the automatic conversion of default Arma ranks.
             "\z\ace\addons\nametags\UI\icons_uk\private_gs.paa",
             "\z\ace\addons\nametags\UI\icons_uk\corporal_gs.paa",
             "\z\ace\addons\nametags\UI\icons_uk\sergeant_gs.paa",
@@ -90,8 +91,8 @@ class etr_ranks_insignias {
         name = "US Army";
         values[] = {
             QPATHTOF(data\us_army\E-2 Private.paa),
-			QPATHTOF(data\us_army\E-4 Corporal.paa),
-			QPATHTOF(data\us_army\E-5 Sergeant.paa),
+            QPATHTOF(data\us_army\E-4 Corporal.paa),
+            QPATHTOF(data\us_army\E-5 Sergeant.paa),
             QPATHTOF(data\us_army\O-2 First Lieutenant.paa),
             QPATHTOF(data\us_army\O-3 Captain.paa),
             QPATHTOF(data\us_army\O-4 Major.paa),
@@ -168,6 +169,7 @@ class etr_ranks_insignias {
             icon = QPATHTOF(data\us_army\E-9 Sergeant Major.paa);
             rank = -1;
         };
+        
         class o1_second_lieutenant {
             name = "O-1 Second Lieutenant";
             icon = QPATHTOF(data\us_army\O-1 Second Lieutenant.paa);
@@ -234,8 +236,8 @@ class etr_ranks_insignias {
         name = "USMC";
         values[] = {
             QPATHTOF(data\usmc\E-2 Private First Class.paa),
-			QPATHTOF(data\usmc\E-4 Corporal.paa),
-			QPATHTOF(data\usmc\E-5 Sergeant.paa),
+            QPATHTOF(data\usmc\E-4 Corporal.paa),
+            QPATHTOF(data\usmc\E-5 Sergeant.paa),
             QPATHTOF(data\usmc\O-2 First Lieutenant.paa),
             QPATHTOF(data\usmc\O-3 Captain.paa),
             QPATHTOF(data\usmc\O-4 Major.paa),
@@ -307,6 +309,7 @@ class etr_ranks_insignias {
             icon = QPATHTOF(data\usmc\E-9 Sergeant Major.paa);
             rank = -1;
         };
+
         class o1_second_lieutenant {
             name = "O-1 Second Lieutenant";
             icon = QPATHTOF(data\usmc\O-1 Second Lieutenant.paa);
@@ -373,12 +376,12 @@ class etr_ranks_insignias {
         name = "Russia";
         values[] = {
             "\z\ace\addons\nametags\UI\icons_russia\private_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_russia\corporal_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_russia\sergeant_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_russia\lieutenant_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_russia\captain_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_russia\major_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_russia\colonel_gs.paa"
+            "\z\ace\addons\nametags\UI\icons_russia\corporal_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_russia\sergeant_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_russia\lieutenant_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_russia\captain_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_russia\major_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_russia\colonel_gs.paa"
         };
 
         class default_rank {
@@ -426,12 +429,12 @@ class etr_ranks_insignias {
         name = "Spain";
         values[] = {
             "\z\ace\addons\nametags\UI\icons_spain\private_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_spain\corporal_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_spain\sergeant_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_spain\lieutenant_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_spain\captain_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_spain\major_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_spain\colonel_gs.paa"
+            "\z\ace\addons\nametags\UI\icons_spain\corporal_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_spain\sergeant_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_spain\lieutenant_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_spain\captain_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_spain\major_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_spain\colonel_gs.paa"
         };
 
         class default_rank {
@@ -479,12 +482,12 @@ class etr_ranks_insignias {
         name = "France";
         values[] = {
             "\z\ace\addons\nametags\UI\icons_france\private_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_france\corporal_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_france\sergeant_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_france\lieutenant_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_france\captain_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_france\major_gs.paa",
-			"\z\ace\addons\nametags\UI\icons_france\colonel_gs.paa"
+            "\z\ace\addons\nametags\UI\icons_france\corporal_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_france\sergeant_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_france\lieutenant_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_france\captain_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_france\major_gs.paa",
+            "\z\ace\addons\nametags\UI\icons_france\colonel_gs.paa"
         };
 
         class default_rank {
@@ -532,12 +535,12 @@ class etr_ranks_insignias {
         name = "Germany";
         values[] = {
             QPATHTOF(data\german\OR-1 Soldat.paa),
-			QPATHTOF(data\german\OR-4c Korporal.paa),
-			QPATHTOF(data\german\OR-6a Feldwebel.paa),
-			QPATHTOF(data\german\OF-1a Leutnant.paa),
-			QPATHTOF(data\german\OF-2a Hauptmann.paa),
-			QPATHTOF(data\german\OF-3 Major.paa),
-			QPATHTOF(data\german\OF-5 Oberst.paa)
+            QPATHTOF(data\german\OR-4c Korporal.paa),
+            QPATHTOF(data\german\OR-6a Feldwebel.paa),
+            QPATHTOF(data\german\OF-1a Leutnant.paa),
+            QPATHTOF(data\german\OF-2a Hauptmann.paa),
+            QPATHTOF(data\german\OF-3 Major.paa),
+            QPATHTOF(data\german\OF-5 Oberst.paa)
         };
 
         class default_rank {
@@ -667,12 +670,12 @@ class etr_ranks_insignias {
         name = "Norwegian";
         values[] = {
             QPATHTOF(data\norwegian\OR-1a-Menig.paa),
-			QPATHTOF(data\norwegian\OR-4a-Korporal.paa),
-			QPATHTOF(data\norwegian\OR-5a-Sersjant.paa),
-			QPATHTOF(data\norwegian\OF-1b-Loytnant.paa),
-			QPATHTOF(data\norwegian\OF-2-Kaptein.paa),
-			QPATHTOF(data\norwegian\OF-3-Major.paa),
-			QPATHTOF(data\norwegian\OF-5-Oberst.paa)
+            QPATHTOF(data\norwegian\OR-4a-Korporal.paa),
+            QPATHTOF(data\norwegian\OR-5a-Sersjant.paa),
+            QPATHTOF(data\norwegian\OF-1b-Loytnant.paa),
+            QPATHTOF(data\norwegian\OF-2-Kaptein.paa),
+            QPATHTOF(data\norwegian\OF-3-Major.paa),
+            QPATHTOF(data\norwegian\OF-5-Oberst.paa)
         };
 
         class default_rank {
@@ -802,12 +805,12 @@ class etr_ranks_insignias {
         name = "Swedish";
         values[] = {
             QPATHTOF(data\blank.paa),
-			QPATHTOF(data\swedish\OR-4_Korpral.paa),
-			QPATHTOF(data\swedish\OR-6a_Sergeant.paa),
-			QPATHTOF(data\swedish\OF-1b_Lojtnant.paa),
-			QPATHTOF(data\swedish\OF-2_Kapten.paa),
-			QPATHTOF(data\swedish\OF-3_Major.paa),
-			QPATHTOF(data\swedish\OF-5_Overste.paa)
+            QPATHTOF(data\swedish\OR-4_Korpral.paa),
+            QPATHTOF(data\swedish\OR-6a_Sergeant.paa),
+            QPATHTOF(data\swedish\OF-1b_Lojtnant.paa),
+            QPATHTOF(data\swedish\OF-2_Kapten.paa),
+            QPATHTOF(data\swedish\OF-3_Major.paa),
+            QPATHTOF(data\swedish\OF-5_Overste.paa)
         };
 
         class default_rank {
@@ -932,12 +935,12 @@ class etr_ranks_insignias {
         name = "Finnish";
         values[] = {
             QPATHTOF(data\finnish\fdf_OR1_sotamies.paa),
-			QPATHTOF(data\finnish\fdf_OR3_alikersantti.paa),
-			QPATHTOF(data\finnish\fdf_OR4_kersantti.paa),
-			QPATHTOF(data\finnish\fdf_OF1_ltn.paa),
-			QPATHTOF(data\finnish\fdf_OF2_kapt.paa),
-			QPATHTOF(data\finnish\fdf_OF3_maj.paa),
-			QPATHTOF(data\finnish\fdf_OF5_ev.paa)
+            QPATHTOF(data\finnish\fdf_OR3_alikersantti.paa),
+            QPATHTOF(data\finnish\fdf_OR4_kersantti.paa),
+            QPATHTOF(data\finnish\fdf_OF1_ltn.paa),
+            QPATHTOF(data\finnish\fdf_OF2_kapt.paa),
+            QPATHTOF(data\finnish\fdf_OF3_maj.paa),
+            QPATHTOF(data\finnish\fdf_OF5_ev.paa)
         };
 
         class default_rank {
@@ -985,6 +988,7 @@ class etr_ranks_insignias {
             icon = QPATHTOF(data\finnish\fdf_OR9_sotmest.paa);
             rank = -1;
         };
+
         class of1a_vanr {
             name = "OF-1a Vänrikki";
             icon = QPATHTOF(data\finnish\fdf_OF1_vanr.paa);
@@ -995,7 +999,7 @@ class etr_ranks_insignias {
             icon = QPATHTOF(data\finnish\fdf_OF1_ltn.paa);
             rank = 3;
         };
-		class of1c_ylil {
+        class of1c_ylil {
             name = "OF-1c Yliluutnantti";
             icon = QPATHTOF(data\finnish\fdf_OF1_ylil.paa);
             rank = -1;
@@ -1008,7 +1012,7 @@ class etr_ranks_insignias {
         class of3_majuri {
             name = "OF-3 Majuri";
             icon = QPATHTOF(data\finnish\fdf_OF3_maj.paa);
-            rank = 4;
+            rank = 5;
         };
         class of4_evl {
             name = "OF-4 Everstiluutnantti";
@@ -1022,20 +1026,16 @@ class etr_ranks_insignias {
         };
     };
 
-
-
-/// Slovenian Ground Forces ///
-
-    class Slovenia {
-        name = "Slovenia";
+    class slovenian {
+        name = "Slovenian";
         values[] = {
             QPATHTOF(data\slovenian\OR-1.paa),
-			QPATHTOF(data\slovenian\OR-3.paa),
-			QPATHTOF(data\slovenian\OR-5.paa),
-			QPATHTOF(data\slovenian\OF-1a.paa),
-			QPATHTOF(data\slovenian\OF-2.paa),
-			QPATHTOF(data\slovenian\OF-3.paa),
-			QPATHTOF(data\slovenian\OF-9.paa)
+            QPATHTOF(data\slovenian\OR-3.paa),
+            QPATHTOF(data\slovenian\OR-5.paa),
+            QPATHTOF(data\slovenian\OF-1a.paa),
+            QPATHTOF(data\slovenian\OF-2.paa),
+            QPATHTOF(data\slovenian\OF-3.paa),
+            QPATHTOF(data\slovenian\OF-9.paa)
         };
 
         class default_rank {
@@ -1157,10 +1157,5 @@ class etr_ranks_insignias {
         };
 
     };
-
-/// END - Slovenian ground forces ///
-
-
-/// END ///
 
 };

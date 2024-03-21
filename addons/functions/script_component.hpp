@@ -9,3 +9,5 @@
 #endif
 
 #include "\z\etr_ranks\addons\main\script_macros.hpp"
+
+#define ALL_RANKS ["PRIVATE", "CORPORAL", "SERGEANT", "LIEUTENANT", "CAPTAIN", "MAJOR", "COLONEL"]

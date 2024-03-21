@@ -36,4 +36,20 @@ TRACE_1("setIconPath",_rankPath);
 // Set and broadcast to all machine + JIP.
 _unit setVariable ["ace_nametags_rankIcon", _rankPath, true];
 
+/* // System that also adds them to uniforms, disabled as it's not wanted. Copied from BIS_fnc_setUnitInsignia function.
+
+// --- find insignia index in hidden textures
+{
+    if (_x == "insignia") exitWith {     
+        isNil // --- make it safe in scheduled
+        {
+            //_unit setVariable ["BIS_fnc_setUnitInsignia_class", [_class, nil] select (_class isEqualTo ""), true];            
+            //_unit setObjectMaterialGlobal [_forEachIndex, getText (_cfgInsignia >> "material") call {[_this, DEFAULT_MATERIAL] select (_this isEqualTo "")}];
+            _unit setObjectTextureGlobal [_forEachIndex, _rankPath];
+        };
+    };
+} forEach getArray (configFile >> "CfgVehicles" >> getText (configFile >> "CfgWeapons" >> uniform _unit >> "ItemInfo" >> "uniformClass") >> "hiddenSelections");
+
+*/
+
 true

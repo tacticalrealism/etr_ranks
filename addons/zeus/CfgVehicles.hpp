@@ -8,8 +8,8 @@ class CfgVehicles {
         scope = 1;
         scopeCurator = 2;
 		function = "";
-        class AttributesBase: AttributesBase {};
-        class ModuleDescription: ModuleDescription {};
+        //class AttributesBase: AttributesBase {};
+        //class ModuleDescription: ModuleDescription {};
     };
 
 	class GVAR(enhancedRank): GVAR(baseModule) {

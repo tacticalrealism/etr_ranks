@@ -6,4 +6,12 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
+[
+    QGVAR(rankSize), "SLIDER",
+    ["Rank size", "Additional rank size slider."],
+    format ["ACE %1", localize "STR_ACE_NameTags_Module_DisplayName"],
+    [1, 3, 1, 0, true],
+    0
+] call CBA_fnc_addSetting;
+
 ADDON = true;
