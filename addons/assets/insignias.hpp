@@ -169,7 +169,7 @@ class etr_ranks_insignias {
             icon = QPATHTOF(data\us_army\E-9 Sergeant Major.paa);
             rank = -1;
         };
-        
+
         class o1_second_lieutenant {
             name = "O-1 Second Lieutenant";
             icon = QPATHTOF(data\us_army\O-1 Second Lieutenant.paa);
@@ -1027,7 +1027,7 @@ class etr_ranks_insignias {
     };
 
     class slovenian {
-        name = "Slovenian";
+        name = "Slovenia";
         values[] = {
             QPATHTOF(data\slovenian\OR-1.paa),
             QPATHTOF(data\slovenian\OR-3.paa),
