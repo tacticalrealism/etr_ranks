@@ -17,18 +17,18 @@
  */
 
 _this spawn {
-	params ["_control", "_value"];
+    params ["_control", "_value"];
 
-	private _data = _control lbData _value;
-	TRACE_2("onLBSelChanged",_value,_data);
+    private _data = _control lbData _value;
+    TRACE_2("onLBSelChanged",_value,_data);
 
-	private _display = ctrlParent _control;
-	private _insigniaArray = getArray (configFile >> "etr_ranks_insignias" >> _data >> "values");
+    private _display = ctrlParent _control;
+    private _insigniaArray = getArray (configFile >> "etr_ranks_insignias" >> _data >> "values");
 
-	for "_i" from 0 to 6 do {
-		private _ctrl = _display displayCtrl _i;
-		_ctrl ctrlSetText (_insigniaArray select _i);
-	};
+    for "_i" from 0 to 6 do {
+        private _ctrl = _display displayCtrl _i;
+        _ctrl ctrlSetText (_insigniaArray select _i);
+    };
 };
 
 nil

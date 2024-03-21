@@ -31,10 +31,10 @@ lbClear _iconDisplay;
 
 // Then add the items.
 {
-	_row = _iconDisplay lbadd (getText (_x >> "name"));
-	_iconDisplay lbSetData [_row, configName _x];
-	_iconDisplay lbSetValue [_row, getNumber (_x >> "rank")];
-	_iconDisplay lbSetPicture [_row, getText (_x >> "icon")];
+    _row = _iconDisplay lbadd (getText (_x >> "name"));
+    _iconDisplay lbSetData [_row, configName _x];
+    _iconDisplay lbSetValue [_row, getNumber (_x >> "rank")];
+    _iconDisplay lbSetPicture [_row, getText (_x >> "icon")];
 } forEach _insigniaArray;
 
 // Select the first (default) one.

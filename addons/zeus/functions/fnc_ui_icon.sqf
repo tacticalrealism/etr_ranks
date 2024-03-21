@@ -28,7 +28,7 @@ _control ctrlRemoveAllEventHandlers "setFocus";
 private _ctrlCombo = _control controlsGroupCtrl 98101;
 
 if (isNil "_value") then {
-	_value = ["default_faction", "default_rank"];
+    _value = ["default_faction", "default_rank"];
 };
 
 _value params ["_faction", "_rank"];
@@ -42,19 +42,19 @@ lbClear _ctrlCombo;
 
 // Add items.
 if (isclass _cfgValues) then {
-	{
-		_lbAdd = _ctrlCombo lbadd gettext (_x >> 'name');
-		_ctrlCombo lbsetdata [_lbadd, configName _x];
-		_ctrlCombo lbSetValue [_lbadd, getNumber (_x >> "rank")];
-		_ctrlCombo lbSetPicture [_lbadd, getText (_x >> "icon")];
-	} foreach configproperties [_cfgValues,'isclass _x'];
+    {
+        _lbAdd = _ctrlCombo lbadd gettext (_x >> 'name');
+        _ctrlCombo lbsetdata [_lbadd, configName _x];
+        _ctrlCombo lbSetValue [_lbadd, getNumber (_x >> "rank")];
+        _ctrlCombo lbSetPicture [_lbadd, getText (_x >> "icon")];
+    } foreach configproperties [_cfgValues,'isclass _x'];
 };
 
 // Select the current one.
 for '_i' from 0 to (lbsize _ctrlCombo - 1) do {
-	if (_rank isEqualTo (_ctrlCombo lbdata _i)) exitwith {
-		_ctrlCombo lbsetcursel _i;
-	};
+    if (_rank isEqualTo (_ctrlCombo lbdata _i)) exitwith {
+        _ctrlCombo lbsetcursel _i;
+    };
 };
 
 nil

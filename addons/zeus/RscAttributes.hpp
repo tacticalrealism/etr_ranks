@@ -35,7 +35,7 @@ class GVAR(RscEnhancedRank): RscDisplayAttributes {
                         class Label: RscText {
                             idc = -1;
                             text = "Insignia Faction";
-						    tooltip = "Which rank insignia faction to use for this unit.";
+                            tooltip = "Which rank insignia faction to use for this unit.";
                             x = 0;
                             y = QUOTE(H_PART(0.1));
                             w = QUOTE(W_PART(10));
@@ -65,7 +65,7 @@ class GVAR(RscEnhancedRank): RscDisplayAttributes {
                         class Label: RscText {
                             idc = -1;
                             text = "Insignia Icon";
-						    tooltip = "Which rank insignia icon to use for this unit.";
+                            tooltip = "Which rank insignia icon to use for this unit.";
                             x = 0;
                             y = QUOTE(H_PART(0.1));
                             w = QUOTE(W_PART(10));
@@ -79,7 +79,7 @@ class GVAR(RscEnhancedRank): RscDisplayAttributes {
                             w = QUOTE(W_PART(15.9));
                             h = QUOTE(H_PART(2));
                             colorTextRight[] = {1,1,1,0.5};
-					        colorSelectRight[] = {0,0,0,0.5};
+                            colorSelectRight[] = {0,0,0,0.5};
                         };
                     };
                 };
