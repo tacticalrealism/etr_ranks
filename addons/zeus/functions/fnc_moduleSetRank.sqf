@@ -16,11 +16,7 @@
  * Public: No
  */
 
-// Only run on server.
-if (!isServer) exitWith {};
-
-TRACE_1("Check",_this);
-
+TRACE_1("params",_this);
 
 params ["_unit","_rank"];
 

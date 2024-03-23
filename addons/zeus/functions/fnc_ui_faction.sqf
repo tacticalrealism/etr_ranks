@@ -51,7 +51,6 @@ switch (false) do {
 private _ctrlCombo = _control controlsGroupCtrl 98100;
 
 if (isNil "_value") then {
-	diag_log "NIL";
 	_value = "default_faction";
 };
 
@@ -83,8 +82,7 @@ private _fnc_onUnload = {
 };
 
 private _fnc_onConfirm = {
-	TRACE_1("WORKS",nil);
-    params [["_ctrlButtonOK", controlNull, [controlNull]]];
+	params [["_ctrlButtonOK", controlNull, [controlNull]]];
 
     private _display = ctrlParent _ctrlButtonOK;
     if (isNull _display) exitWith {};

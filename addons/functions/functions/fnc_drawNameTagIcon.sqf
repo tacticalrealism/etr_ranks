@@ -80,7 +80,7 @@ _fnc_parameters = {
     private _scale = [0.333, 0.5, 0.666, 0.83333, 1] select ACE_GVAR(nametags,tagSize);
     private _rankScale = GVAR(rankSize);
 
-    TRACE_1("rankScale",_rankScale);
+    //TRACE_1("rankScale",_rankScale);
 
     (getTextureInfo _icon) params ["_sizeW", "_sizeH"];
     private _r = [_sizeW, _sizeH] call FUNC(gcd);
@@ -88,7 +88,7 @@ _fnc_parameters = {
     private _scaleW = _sizeW/_r;
     private _scaleH = _sizeH/_r;
 
-    TRACE_4("",_icon,_r,_scaleW,_scaleH);
+    //TRACE_4("",_icon,_r,_scaleW,_scaleH);
 
     [
         _icon,

@@ -1104,7 +1104,6 @@ class etr_ranks_insignias {
             rank = -1;
         };
 
-
         class of1a_porocnik {
             name = "OF-1a Poročnik (2LT)";
             icon = QPATHTOF(data\slovenian\OF-1a.paa);

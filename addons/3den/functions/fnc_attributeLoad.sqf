@@ -17,7 +17,6 @@
 private _ctrlCombo = _this controlsGroupCtrl 98100;
 
 if (isNil "_value") then {
-    diag_log "NIL";
     _value = "default_faction";
 };
 
