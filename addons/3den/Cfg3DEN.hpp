@@ -133,7 +133,7 @@ class Cfg3DEN {
                         control = QGVAR(insigniaFaction);
                         typeName = "STRING";
                         defaultValue = "default_faction";
-                        expression = QUOTE(_this setVariable ARR_2(['%s',_value]););
+                        expression = "";
                         condition = "objectBrain";
                     };
 

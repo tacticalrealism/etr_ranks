@@ -550,7 +550,7 @@ class etr_ranks_insignias {
         };
         class or1_soldat {
             name = "OR-1 Soldat";
-            icon = QPATHTOF(data\german\OR-1 Soldat.paa);
+            icon = QPATHTOF(data\blank.paa);
             rank = 0;
         };
         class or2_gefreiter {
@@ -934,9 +934,9 @@ class etr_ranks_insignias {
     class finnish {
         name = "Finnish";
         values[] = {
-            QPATHTOF(data\finnish\fdf_OR1_sotamies.paa),
-            QPATHTOF(data\finnish\fdf_OR3_alikersantti.paa),
-            QPATHTOF(data\finnish\fdf_OR4_kersantti.paa),
+            QPATHTOF(data\blank.paa),
+            QPATHTOF(data\finnish\fdf_OR4_alikersantti.paa),
+            QPATHTOF(data\finnish\fdf_OR5_kersantti.paa),
             QPATHTOF(data\finnish\fdf_OF1_ltn.paa),
             QPATHTOF(data\finnish\fdf_OF2_kapt.paa),
             QPATHTOF(data\finnish\fdf_OF3_maj.paa),
@@ -948,8 +948,8 @@ class etr_ranks_insignias {
             icon = "";
             rank = -1;
         };
-        class or2_jaak {
-            name = "OR-2 Jääkäri";
+        class or2_sotamies{
+            name = "OR-2 Sotamies";
             icon = QPATHTOF(data\blank.paa);
             rank = 0;
         };

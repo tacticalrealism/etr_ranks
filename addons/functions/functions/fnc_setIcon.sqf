@@ -29,7 +29,23 @@ if (_rankInfo isEqualTo ["", ""]) then {
 
 _rankInfo params [["_faction","default_faction",[""]], ["_rank","default_rank",[""]]];
 
-if (_rank isEqualTo "default_rank") exitWith {false};
+// Check if this faction/rank exist.
+if !(isClass (configFile >> "etr_ranks_insignias" >> _faction >> _rank)) exitWith {
+    WARNING_3("Incorrect inisgnia data given to unit:%1, %2, %3",_unit,_faction,_rank);
+    false
+};
+
+if (_rank isEqualTo "default_rank") exitWith {
+    false
+    // Find factions equivalent rank.
+    /*private _rankIndex = ALL_RANKS find (rank _unit);
+
+    {
+        if ((getNumber (_x >> "rank")) isEqualTo _rankIndex) exitWith {
+            _rank = configName _x;
+        };
+    } forEach ("true" configClasses (configFile >> "etr_ranks_insignias" >> _faction));*/
+};
 
 private _rankPath = getText (configFile >> "etr_ranks_insignias" >> _faction >> _rank >> "icon");
 
