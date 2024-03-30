@@ -21,7 +21,8 @@ TRACE_1("",_this);
 
 private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
 private _unit = attachedTo _logic;
-private _value = _unit getVariable ["etr_ranks_insigniaFaction", nil];
+private _value = _unit getVariable ["etr_ranks_insigniaIcon", ["default_faction","default_rank"]];
+_value params ["_faction"];
 
 _control ctrlRemoveAllEventHandlers "setFocus";
 private _display = ctrlParent _control;
@@ -50,11 +51,7 @@ switch (false) do {
 
 private _ctrlCombo = _control controlsGroupCtrl 98100;
 
-if (isNil "_value") then {
-	_value = "default_faction";
-};
-
-TRACE_1("onLoadFaction",_value);
+TRACE_1("onLoadFaction",_faction);
 
 private _cfgValues = (configFile >> "etr_ranks_insignias");
 
@@ -65,8 +62,11 @@ if (isclass _cfgValues) then {
 	} foreach configproperties [_cfgValues,'isclass _x'];
 };
 
+// Sort the listbox.
+lbSort _ctrlCombo;
+
 for '_i' from 0 to (lbsize _ctrlCombo - 1) do {
-	if (_value isEqualTo (_ctrlCombo lbdata _i)) exitwith {
+	if (_faction isEqualTo (_ctrlCombo lbdata _i)) exitwith {
 		_ctrlCombo lbsetcursel _i;
 	};
 };

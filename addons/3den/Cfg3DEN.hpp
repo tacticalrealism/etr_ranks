@@ -133,7 +133,7 @@ class Cfg3DEN {
                         control = QGVAR(insigniaFaction);
                         typeName = "STRING";
                         defaultValue = "default_faction";
-                        expression = QUOTE([ARR_2(getText ((configOf _this) >> 'faction'),_value)] call EFUNC(functions,setFaction); _this setVariable ARR_2(['%s',_value]););
+                        expression = "";
                         condition = "objectBrain";
                     };
 
@@ -144,7 +144,7 @@ class Cfg3DEN {
                         control = QGVAR(insigniaIcon);
                         typeName = "STRING";
                         defaultValue = "default_rank";
-                        expression = QUOTE([ARR_2(_this,_value)] call EFUNC(functions,setIcon); _this setVariable ARR_2(['%s',_value]););
+                        expression = QUOTE(_this setVariable ARR_2(['%s',_value]););
                         condition = "objectBrain";
                     };
                 };
