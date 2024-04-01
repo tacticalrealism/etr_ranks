@@ -1,7 +1,8 @@
 #include "script_component.hpp"
 /*
  * Author: JasperRab
- * Check against config data which insignia data should be given for a specific playerUID.
+ * Check against UID system data which insignia data should be given for a specific playerUID.
+ * Can be used to test/debug.
  *
  * Arguments:
  * 0: PlayerUID <STRING>
@@ -10,15 +11,14 @@
  * rankInfo <ARRAY>
  *
  * Example:
- * ["myPlayerUID"] call etr_ranks_uid_fnc_checkUID
+ * ["myPlayerUID"] call etr_ranks_functions_fnc_checkUID
  *
- * Public: No
+ * Public: Yes
  */
 
 params [["_playerUID", ""]];
 
-private _faction = "default_faction";
-private _rank = "default_rank";
+(parseSimpleArray GVAR(defaultRankInfo)) params [["_faction", "default_faction"], ["_rank", "default_rank"]];
 
  if (_playerUID isEqualTo "") then {
     _playerUID = getPlayerUID _unit;
@@ -50,9 +50,9 @@ switch (GVAR(UIDSystem)) do {
         } forEach _uidData;
 
         // Check if _rank has been set.
-        if (_rank isEqualTo "default_rank") then {
+        if (_rank isEqualTo (parseSimpleArray GVAR(defaultRankInfo))#1) then {
             // Set faction back to default values.
-            _faction = "default_faction";
+            _faction = (parseSimpleArray GVAR(defaultRankInfo))#0;
         };
     };
     case 2: {

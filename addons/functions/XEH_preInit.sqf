@@ -15,6 +15,16 @@ PREP_RECOMPILE_END;
 ] call CBA_fnc_addSetting;
 
 [
+    QGVAR(defaultRankInfo), "EDITBOX",
+    ["Default rank info", "Default values used for rank info, only for players."],
+    ["ETR Enhanced Ranks", "General"],
+    '["default_faction","default_rank"]',
+    2,
+    {},
+    true
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(uidSystem), "LIST",
     ["UID system", "UID system selection."],
     ["ETR Enhanced Ranks", "General"],

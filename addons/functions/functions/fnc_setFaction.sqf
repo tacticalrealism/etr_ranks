@@ -11,7 +11,7 @@
  * Successfully added, false if it has already been added before <BOOLEAN>
  *
  * Example:
- * ["BLU_F", "us_army"] call etr_operation_ranks_fnc_setFaction;
+ * ["BLU_F", "us_army"] call etr_ranks_functions_fnc_setFaction;
  *
  * Public: Yes
  */
