@@ -11,7 +11,7 @@ PREP_RECOMPILE_END;
     ["Rank size", "Additional rank size slider."],
     ["ETR Enhanced Ranks", "General"],
     [0.75, 3, 1, 0, true],
-    0
+    2
 ] call CBA_fnc_addSetting;
 
 [
@@ -19,7 +19,7 @@ PREP_RECOMPILE_END;
     ["Default rank info", "Default values used for rank info, only for players."],
     ["ETR Enhanced Ranks", "General"],
     '["default_faction","default_rank"]',
-    2,
+    0,
     {},
     true
 ] call CBA_fnc_addSetting;
@@ -29,7 +29,7 @@ PREP_RECOMPILE_END;
     ["UID system", "UID system selection."],
     ["ETR Enhanced Ranks", "General"],
     [[0, 1, 2], ["Disabled", "Config", "CBA Settings"], 0],
-    2,
+    0,
     {},
     true
 ] call CBA_fnc_addSetting;
@@ -39,7 +39,7 @@ PREP_RECOMPILE_END;
     ["UID settings amount", "How many different ranks should be editable via CBA settings? Requires a reopen of the mission to take effect."],
     ["ETR Enhanced Ranks", "UID Settings"],
     "10",
-    2,
+    0,
     {},
     true
 ] call CBA_fnc_addSetting;
@@ -50,7 +50,7 @@ for "_i" from 1 to (parseNumber GVARMAIN(uidSystem_amount)) do {
         [format["%1 - Rank",_i], ""],
         ["ETR Enhanced Ranks", "UID Settings"],
         '["default_faction","default_rank"]',
-        2,
+        0,
         {},
         false
     ] call CBA_fnc_addSetting;
@@ -60,7 +60,7 @@ for "_i" from 1 to (parseNumber GVARMAIN(uidSystem_amount)) do {
         [format["%1 - UIDs",_i], ""],
         ["ETR Enhanced Ranks", "UID Settings"],
         '["uid1","uid2"]',
-        2,
+        0,
         {},
         false
     ] call CBA_fnc_addSetting;
