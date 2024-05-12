@@ -117,22 +117,22 @@ class usmc {
         rank = -1;
     };
     class w2_warrant_officer_2 {
-        name = "W-2 Warrant Officer 2";
+        name = "W-2 Chief Warrant Officer 2";
         icon = QPATHTOF(data\usmc\W-2 Chief Warrant Officer 2.paa);
         rank = -1;
     };
     class w3_warrant_officer_3 {
-        name = "W-3 Warrant Officer 3";
+        name = "W-3 Chief Warrant Officer 3";
         icon = QPATHTOF(data\usmc\W-3 Chief Warrant Officer 3.paa);
         rank = -1;
     };
     class w4_warrant_officer_4 {
-        name = "W-4 Warrant Officer 4";
+        name = "W-4 Chief Warrant Officer 4";
         icon = QPATHTOF(data\usmc\W-4 Chief Warrant Officer 4.paa);
         rank = -1;
     };
     class w5_warrant_officer_5 {
-        name = "W-5 Warrant Officer 5";
+        name = "W-5 Chief Warrant Officer 5";
         icon = QPATHTOF(data\usmc\W-5 Chief Warrant Officer 5.paa);
         rank = -1;
     };

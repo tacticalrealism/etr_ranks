@@ -92,7 +92,7 @@ class dutch_army {
         rank = 6;
     };
     class brigadegeneraal {
-        name = " Brigadegeneraal";
+        name = "Brigadegeneraal";
         icon = QPATHTOF(data\dutch_army\OF-6.paa);
         rank = -1;
     };

@@ -2,7 +2,9 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "files.associations": {
-        "*.hpp": "ext"
+        "*.hpp": "arma-config",
+        "*.cpp": "arma-config",
+        "*.sqf": "sqf"
     },
     "sqf.enableCBA": true,
     "sqf.enableACE3": true,

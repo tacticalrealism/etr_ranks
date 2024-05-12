@@ -33,4 +33,5 @@ class etr_ranks_insignias {
     #include "data/dutch_army/insignias.hpp"
     #include "data/ukrainian_ground_forces/insignias.hpp"
     #include "data/uk_royal_marines/insignias.hpp"
+    #include "data/czech_republic/insignias.hpp"
 };
