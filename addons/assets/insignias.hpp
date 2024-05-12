@@ -18,7 +18,7 @@ class etr_ranks_insignias {
         };
     };
 
-    // Includes to faction insignias.    
+    // Includes to faction insignias.
     #include "data/uk_army/insignias.hpp"
     #include "data/us_army/insignias.hpp"
     #include "data/usmc/insignias.hpp"
@@ -34,4 +34,5 @@ class etr_ranks_insignias {
     #include "data/ukrainian_ground_forces/insignias.hpp"
     #include "data/uk_royal_marines/insignias.hpp"
     #include "data/czech_republic/insignias.hpp"
+    #include "data/italy/insignias.hpp"
 };
