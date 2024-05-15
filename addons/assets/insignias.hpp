@@ -35,4 +35,5 @@ class etr_ranks_insignias {
     #include "data/uk_royal_marines/insignias.hpp"
     #include "data/czech_republic/insignias.hpp"
     #include "data/italy/insignias.hpp"
+    #include "data/austria/insignias.hpp"
 };
