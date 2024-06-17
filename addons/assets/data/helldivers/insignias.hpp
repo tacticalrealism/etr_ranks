@@ -61,12 +61,12 @@ class helldivers {
         rank = -1;
     };
     class 10_admiral {
-        name = "09b Luogotenente (sub-LT)";
+        name = "Admiral";
         icon = QPATHTOF(data\helldivers\10.paa);
         rank = 2;
     };
     class 11_skull_admiral {
-        name = "09c Primo Luogotenente (sub-LT)";
+        name = "Skull Admiral";
         icon = QPATHTOF(data\helldivers\11.paa);
         rank = -1;
     };
