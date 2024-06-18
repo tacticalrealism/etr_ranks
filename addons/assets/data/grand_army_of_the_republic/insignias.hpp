@@ -16,7 +16,7 @@ class grand_army_of_the_republic {
         rank = -1;
     };
     class 01_trooper {
-        name = "Truper";
+        name = "Trooper";
         icon = QPATHTOF(data\grand_army_of_the_republic\01.paa);
         rank = 0;
     };
