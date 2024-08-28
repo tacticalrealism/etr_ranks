@@ -24,7 +24,7 @@ private _unit = attachedTo _logic;
 private _value = _unit getVariable ["etr_ranks_insigniaIcon", ["default_faction","default_rank"]];
 _value params ["_faction"];
 
-_control ctrlRemoveAllEventHandlers "setFocus";
+_control ctrlRemoveAllEventHandlers "SetFocus";
 private _display = ctrlParent _control;
 
 // Check if target is valid.

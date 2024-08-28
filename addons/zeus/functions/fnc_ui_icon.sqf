@@ -23,7 +23,7 @@ private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
 private _unit = attachedTo _logic;
 private _value = _unit getVariable ["etr_ranks_insigniaIcon", nil];
 
-_control ctrlRemoveAllEventHandlers "setFocus";
+_control ctrlRemoveAllEventHandlers "SetFocus";
 
 private _ctrlCombo = _control controlsGroupCtrl 98101;
 
