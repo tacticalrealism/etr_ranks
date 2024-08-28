@@ -39,4 +39,5 @@ class etr_ranks_insignias {
     #include "data/ww2_us_army/insignias.hpp"
     #include "data/helldivers/insignias.hpp"
     #include "data/grand_army_of_the_republic/insignias.hpp"
+    #include "data/warhammer/insignias.hpp"
 };
