@@ -42,4 +42,5 @@ class etr_ranks_insignias {
     #include "data/warhammer/insignias.hpp"
     #include "data/danish/insignias.hpp"
     #include "data/australia/insignias.hpp"
+    #include "data/polish/insignias.hpp"
 };
