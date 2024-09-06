@@ -34,7 +34,7 @@ switch (GVAR(UIDSystem)) do {
 
         // If not present, get data from missionConfig.
         if (_uidData isEqualTo []) then {
-            _uidData = "true" configClasses (missionconfigFile >> "etr_ranks_uids");
+            _uidData = "true" configClasses (missionConfigFile >> "etr_ranks_uids");
         };
 
         // If no config present, exit.

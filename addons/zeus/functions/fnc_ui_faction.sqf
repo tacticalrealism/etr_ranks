@@ -55,19 +55,19 @@ TRACE_1("onLoadFaction",_faction);
 
 private _cfgValues = (configFile >> "etr_ranks_insignias");
 
-if (isclass _cfgValues) then {
+if (isClass _cfgValues) then {
 	{
-		_lbAdd = _ctrlCombo lbadd gettext (_x >> 'name');
-		_ctrlCombo lbsetdata [_lbadd, configName _x];
-	} foreach configproperties [_cfgValues,'isclass _x'];
+		_lbAdd = _ctrlCombo lbAdd getText (_x >> 'name');
+		_ctrlCombo lbSetData [_lbadd, configName _x];
+	} forEach configProperties [_cfgValues,'isClass _x'];
 };
 
 // Sort the listbox.
 lbSort _ctrlCombo;
 
-for '_i' from 0 to (lbsize _ctrlCombo - 1) do {
-	if (_faction isEqualTo (_ctrlCombo lbdata _i)) exitwith {
-		_ctrlCombo lbsetcursel _i;
+for '_i' from 0 to (lbSize _ctrlCombo - 1) do {
+	if (_faction isEqualTo (_ctrlCombo lbData _i)) exitWith {
+		_ctrlCombo lbSetCurSel _i;
 	};
 };
 
@@ -87,11 +87,11 @@ private _fnc_onConfirm = {
     private _display = ctrlParent _ctrlButtonOK;
     if (isNull _display) exitWith {};
 
-    private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objnull);
+    private _logic = GETMVAR(BIS_fnc_initCuratorAttributes_target,objNull);
     if (isNull _logic) exitWith {};
 
-	private _faction = (_display displayCtrl 98100) lbdata lbCurSel (_display displayCtrl 98100);
-    private _icon = (_display displayCtrl 98101) lbdata lbCurSel (_display displayCtrl 98101);
+	private _faction = (_display displayCtrl 98100) lbData lbCurSel (_display displayCtrl 98100);
+    private _icon = (_display displayCtrl 98101) lbData lbCurSel (_display displayCtrl 98101);
     [attachedTo _logic, [_faction, _icon]] call FUNC(moduleSetRank);
 };
 

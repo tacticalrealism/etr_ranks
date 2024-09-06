@@ -24,24 +24,24 @@ TRACE_1("attributeLoad",_value);
 
 private _cfgValues = (configFile >> "etr_ranks_insignias"); 
 
-if (isclass _cfgValues) then {
+if (isClass _cfgValues) then {
     {
         // Check if rank is replaced.
         if (isText (_x >> "replace")) then {
             if (_value isEqualTo (configName _x)) then {_value = (getText (_x >> "replace"))};
         } else {
-            _lbAdd = _ctrlCombo lbadd getText (_x >> 'name');
-            _ctrlCombo lbsetdata [_lbadd, configName _x];
+            _lbAdd = _ctrlCombo lbAdd getText (_x >> 'name');
+            _ctrlCombo lbSetData [_lbadd, configName _x];
         };
-    } foreach configproperties [_cfgValues,'isclass _x'];
+    } forEach configProperties [_cfgValues,'isclass _x'];
 };
 
 // Sort the listbox.
 lbSort _ctrlCombo;
 
-for '_i' from 0 to (lbsize _ctrlCombo - 1) do {
-    if (_value isEqualTo (_ctrlCombo lbdata _i)) exitwith {
-        _ctrlCombo lbsetcursel _i;
+for '_i' from 0 to (lbSize _ctrlCombo - 1) do {
+    if (_value isEqualTo (_ctrlCombo lbData _i)) exitWith {
+        _ctrlCombo lbSetCurSel _i;
     };
 };
 

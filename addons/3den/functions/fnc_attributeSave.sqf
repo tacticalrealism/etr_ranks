@@ -16,7 +16,7 @@
 
 _ctrlCombo = _this controlsGroupCtrl 98100;
 
-private _value = (_ctrlCombo lbdata lbcursel _ctrlCombo);
+private _value = (_ctrlCombo lbData lbCurSel _ctrlCombo);
 TRACE_1("attributeSave",_value);
 
 _value

@@ -19,7 +19,7 @@ private _ctrlFaction = (ctrlParent _this) displayCtrl 98100;
 
 private _faction = _ctrlFaction lbData (lbCurSel _ctrlFaction);
 
-private _value = (_ctrlCombo lbdata lbcursel _ctrlCombo);
+private _value = (_ctrlCombo lbData lbCurSel _ctrlCombo);
 TRACE_2("attributeSaveUnit",_faction,_value);
 
 [_faction, _value]

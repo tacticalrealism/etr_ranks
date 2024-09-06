@@ -26,16 +26,16 @@ TRACE_2("attributeLoadUnit",_faction,_rank);
 
 private _cfgValues = (configFile >> "etr_ranks_insignias" >> _faction);
 
-if (isclass _cfgValues) then {
+if (isClass _cfgValues) then {
     {
-        _lbAdd = _ctrlCombo lbadd gettext (_x >> 'name');
-        _ctrlCombo lbsetdata [_lbadd, configName _x];
-    } foreach configproperties [_cfgValues,'isclass _x'];
+        _lbAdd = _ctrlCombo lbAdd getText (_x >> 'name');
+        _ctrlCombo lbSetData [_lbadd, configName _x];
+    } forEach configProperties [_cfgValues,'isclass _x'];
 };
 
-for '_i' from 0 to (lbsize _ctrlCombo - 1) do {
-    if (_rank isEqualTo (_ctrlCombo lbdata _i)) exitwith {
-        _ctrlCombo lbsetcursel _i;
+for '_i' from 0 to (lbSize _ctrlCombo - 1) do {
+    if (_rank isEqualTo (_ctrlCombo lbData _i)) exitWith {
+        _ctrlCombo lbSetCurSel _i;
     };
 };
 

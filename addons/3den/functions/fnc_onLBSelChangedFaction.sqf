@@ -34,7 +34,7 @@ _this spawn {
 
     // Then add the items.
     {
-        _row = _iconDisplay lbadd (getText (_x >> "name"));
+        _row = _iconDisplay lbAdd (getText (_x >> "name"));
         _iconDisplay lbSetData [_row, configName _x];
         _iconDisplay lbSetValue [_row, getNumber (_x >> "rank")];
         _iconDisplay lbSetPicture [_row, getText (_x >> "icon")];
