@@ -1,5 +1,5 @@
 class japan {
-    name = "japan";
+    name = "Japan";
     values[] = {
         QPATHTOF(data\japan\e-1.paa),
         QPATHTOF(data\japan\e-3.paa),
