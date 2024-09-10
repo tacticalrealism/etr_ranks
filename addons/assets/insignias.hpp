@@ -43,4 +43,5 @@ class etr_ranks_insignias {
     #include "data/danish/insignias.hpp"
     #include "data/australia/insignias.hpp"
     #include "data/polish/insignias.hpp"
+    #include "data/japan/insignias.hpp"
 };
