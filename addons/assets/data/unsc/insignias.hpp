@@ -390,7 +390,7 @@ class unsc {
       };
       class o8_af_major_general {
           name = "O-8 Major General";
-          icon = QPATHTOF(data\unsc\O-8a.paa);
+          icon = QPATHTOF(data\unsc\O-8.paa);
           rank = -1;
       };
       class o9_af_brigadier_general {
