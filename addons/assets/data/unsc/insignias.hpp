@@ -164,12 +164,12 @@ class unsc {
     };
     class e2_n_crewman_apprentice {
         name = "E-2 Crewman Apprentice";
-        icon = QPATHTOF(data\E-2.paa);
+        icon = QPATHTOF(data\unsc\E-2.paa);
         rank = -1;
     };
     class e3_n_crewman {
         name = "E-3 Crewman";
-        icon = QPATHTOF(data\E-3.paa);
+        icon = QPATHTOF(data\unsc\E-3.paa);
         rank = -1;
     };
     class e4_n_Petty_Officer_Third_Class {
