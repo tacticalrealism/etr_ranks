@@ -336,7 +336,7 @@ class unsc {
           icon = QPATHTOF(data\unsc\E-8a.paa);
           rank = -1;
       };
-      class e9a_Chief Master Sergeant {
+      class e9a_Chief_Master_Sergeant {
           name = "E-9a Chief Master Sergeant";
           icon = QPATHTOF(data\unsc\E-9a.paa);
           rank = -1;
