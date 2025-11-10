@@ -39,7 +39,7 @@ PREP_RECOMPILE_END;
     ["UID settings amount", "How many different ranks should be editable via CBA settings? Requires a reopen of the mission to take effect."],
     ["ETR Enhanced Ranks", "UID Settings"],
     "10",
-    true,
+    0,
     {},
     true
 ] call CBA_fnc_addSetting;
