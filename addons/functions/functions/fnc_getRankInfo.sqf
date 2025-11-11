@@ -11,12 +11,12 @@
  * rankInfo <ARRAY>
  *
  * Example:
- * ["myPlayerUID"] call etr_ranks_functions_fnc_checkUID
+ * ["myPlayerUID"] call etr_ranks_functions_fnc_getRankInfo
  *
  * Public: Yes
  */
 
-params [["_playerUID", ""]];
+params [["_playerUID", ""], "_unit"];
 
 (parseSimpleArray GVAR(defaultRankInfo)) params [["_faction", "default_faction"], ["_rank", "default_rank"]];
 
@@ -25,8 +25,9 @@ params [["_playerUID", ""]];
 };
 
 // Check which UID system is used.
-switch (GVAR(UIDSystem)) do {
+switch (GVAR(assignSystemType)) do {
     case 1: {
+
         // Config system.
 
         // Get data from config.
@@ -56,6 +57,7 @@ switch (GVAR(UIDSystem)) do {
         };
     };
     case 2: {
+
         // CBA settings system.
         
         // Go through all uids.
@@ -63,6 +65,31 @@ switch (GVAR(UIDSystem)) do {
             // Check if playerUID is in this index.
             if (_playerUID in (parseSimpleArray (call compile format[QGVARMAIN(uidSystem_uids_%1),_i]))) exitWith {
                 private _rankinfo = (parseSimpleArray (call compile format[QGVARMAIN(uidSystem_rank_%1),_i]));
+                _faction = _rankinfo select 0;
+                _rank = _rankinfo select 1;
+            };
+        };
+    };
+    case 3: {
+
+        // Regex settings system.
+        
+        private _name = name _unit;
+        _name = toLower _name;
+        _name = _name splitString " ";
+
+        // Go through all uids.
+        for "_i" from 1 to (parseNumber GVARMAIN(regexSystem_amount)) do {
+
+            private _isTrue = false;
+            {
+                if (_x isEqualTo (toLower (missionNamespace getVariable (format[QGVARMAIN(regexSystem_regexString_%1),_i])))) then {
+                    _isTrue = true;
+                };
+            } forEach _name;
+
+            if (_isTrue) exitWith {
+                private _rankinfo = (parseSimpleArray (call compile format[QGVARMAIN(regexSystem_rank_%1),_i]));
                 _faction = _rankinfo select 0;
                 _rank = _rankinfo select 1;
             };

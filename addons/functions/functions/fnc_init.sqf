@@ -27,9 +27,9 @@ private _handle = [{
     (_unit getVariable ["etr_ranks_insigniaIcon", ["default_faction","default_rank"]]) params ["_faction", "_rank"];
 
     // Set rank icon.
-    if ((GVAR(uidSystem) > 0) && {(isPlayer _unit)}) then {
+    if ((GVAR(assignSystemType) > 0) && {(isPlayer _unit)}) then {
         // Get rank info from uid.
-        private _rankInfo = [getPlayerUID _unit] call FUNC(checkUID);
+        private _rankInfo = [getPlayerUID _unit, _unit] call FUNC(getRankInfo);
         // Set rank info.
         _unit setVariable ["etr_ranks_insigniaIcon", _rankInfo, true];
         // Set icon.

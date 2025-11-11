@@ -1,5 +1,5 @@
 // FUNCTION PREPS
-PREP(checkUID);
+PREP(getRankInfo);
 PREP(demo);
 PREP(gcd);
 PREP(init);
