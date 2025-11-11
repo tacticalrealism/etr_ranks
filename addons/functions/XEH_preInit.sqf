@@ -25,10 +25,10 @@ PREP_RECOMPILE_END;
 ] call CBA_fnc_addSetting;
 
 [
-    QGVAR(uidSystem), "LIST",
-    ["UID system", "UID system selection."],
+    QGVAR(assignSystemType), "LIST",
+    ["Rank auto assign system", "Disabled: disabled\nUID Config: set via config file\nUID Settings: use player IDs set here in CBA to set rank\nRegex Settings: Search for a matching name in the players username to assign a rank"],
     ["ETR Enhanced Ranks", "General"],
-    [[0, 1, 2], ["Disabled", "Config", "CBA Settings"], 0],
+    [[0, 1, 2, 3], ["Disabled", "UID Config", "UID Settings", "Regex Settings"], 0],
     true,
     {},
     true
@@ -38,6 +38,16 @@ PREP_RECOMPILE_END;
     QGVARMAIN(uidSystem_amount), "EDITBOX",
     ["UID settings amount", "How many different ranks should be editable via CBA settings? Requires a reopen of the mission to take effect."],
     ["ETR Enhanced Ranks", "UID Settings"],
+    "10",
+    0,
+    {},
+    true
+] call CBA_fnc_addSetting;
+
+[
+    QGVARMAIN(regexSystem_amount), "EDITBOX",
+    ["Regex settings amount", "How many different ranks should be editable via CBA settings? Requires a reopen of the mission to take effect."],
+    ["ETR Enhanced Ranks", "Regex Settings"],
     "10",
     0,
     {},
@@ -60,6 +70,28 @@ for "_i" from 1 to (parseNumber GVARMAIN(uidSystem_amount)) do {
         [format["%1 - UIDs",_i], ""],
         ["ETR Enhanced Ranks", "UID Settings"],
         '["uid1","uid2"]',
+        true,
+        {},
+        false
+    ] call CBA_fnc_addSetting;
+};
+
+for "_i" from 1 to (parseNumber GVARMAIN(regexSystem_amount)) do {
+    [
+        format[QGVARMAIN(regexSystem_rank_%1),_i], "EDITBOX",
+        [format["%1 - Rank",_i], ""],
+        ["ETR Enhanced Ranks", "Regex Settings"],
+        '["default_faction","default_rank"]',
+        true,
+        {},
+        false
+    ] call CBA_fnc_addSetting;
+
+    [
+        format[QGVARMAIN(regexSystem_regexString_%1),_i], "EDITBOX",
+        [format["%1 - Regex to check",_i], ""],
+        ["ETR Enhanced Ranks", "Regex Settings"],
+        'Pvt.',
         true,
         {},
         false
