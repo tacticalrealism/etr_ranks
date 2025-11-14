@@ -38,7 +38,7 @@ PREP_RECOMPILE_END;
     QGVARMAIN(uidSystem_amount), "EDITBOX",
     ["UID settings amount", "How many different ranks should be editable via CBA settings? Requires a reopen of the mission to take effect."],
     ["ETR Enhanced Ranks", "UID Settings"],
-    "10",
+    "25",
     0,
     {},
     true
@@ -48,7 +48,7 @@ PREP_RECOMPILE_END;
     QGVARMAIN(regexSystem_amount), "EDITBOX",
     ["Regex settings amount", "How many different ranks should be editable via CBA settings? Requires a reopen of the mission to take effect."],
     ["ETR Enhanced Ranks", "Regex Settings"],
-    "10",
+    "25",
     0,
     {},
     true
