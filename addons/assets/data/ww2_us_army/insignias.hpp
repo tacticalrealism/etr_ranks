@@ -2,8 +2,8 @@ class ww2_us_army {
     name = "WW2 US Army";
     values[] = {
         QPATHTOF(data\ww2_us_army\E-2_Private_First_Class.paa),
-        QPATHTOF(data\ww2_us_army\E-4_Corporal.paa),
-        QPATHTOF(data\ww2_us_army\E-5_Sergeant.paa),
+        QPATHTOF(data\ww2_us_army\E-3_Corporal.paa),
+        QPATHTOF(data\ww2_us_army\E-4_Sergeant.paa),
         QPATHTOF(data\ww2_us_army\O-2_First_Lieutenant.paa),
         QPATHTOF(data\ww2_us_army\O-3_Captain.paa),
         QPATHTOF(data\ww2_us_army\O-4_Major.paa),

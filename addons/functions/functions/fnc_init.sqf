@@ -35,7 +35,7 @@ private _handle = [{
         // Set icon.
         [_unit, _rankInfo] call FUNC(setIcon);
         // If unit is now player set higher pfh time to save resources
-        if !((_unit getVariable ["etr_ranks_unit_pfh_time", 30]) == 300) then {
+        if ((_unit getVariable ["etr_ranks_unit_pfh_time", 30]) != 300) then {
             _unit setVariable ["etr_ranks_unit_pfh_time", 300, true];
         };
     } else {

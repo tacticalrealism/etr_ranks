@@ -2,7 +2,7 @@ class australia {
     name = "Australia";
     values[] = {
         QPATHTOF(data\australia\OR-1.paa),
-        QPATHTOF(data\australia\OR-3.paa),
+        QPATHTOF(data\australia\OR-5.paa),
         QPATHTOF(data\australia\OR-5.paa),
         QPATHTOF(data\australia\OF-1b.paa),
         QPATHTOF(data\australia\OF-2.paa),

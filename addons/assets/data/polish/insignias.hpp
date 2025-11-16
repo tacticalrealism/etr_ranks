@@ -1,8 +1,8 @@
 class polish {
     name = "Polish";
     values[] = {
-        QPATHTOF(data\polish\OR-1.paa),
-        QPATHTOF(data\polish\OR-3.paa),
+        QPATHTOF(data\polish\OR-1a.paa),
+        QPATHTOF(data\polish\OR-3a.paa),
         QPATHTOF(data\polish\OR-5.paa),
         QPATHTOF(data\polish\OF-1b.paa),
         QPATHTOF(data\polish\OF-2.paa),
@@ -23,22 +23,22 @@ class polish {
     class or1b_starszy_szeregowy {
         name = "OR-1b Starszy szeregowy (PFC)";
         icon = QPATHTOF(data\polish\OR-1b.paa);
-        rank = 0;
+        rank = -1;
     };
     class or2_kapral {
         name = "OR-2 Kapral";
         icon = QPATHTOF(data\polish\OR-2.paa);
-        rank = 0;
+        rank = -1;
     };
     class or3a_starszy_kapral {
         name = "OR-3a Starszy kapral";
         icon = QPATHTOF(data\polish\OR-3a.paa);
-        rank = 0;
+        rank = 1;
     };
     class or3b_plutonowy {
         name = "OR-1 Plutonowy (CPL)";
         icon = QPATHTOF(data\polish\OR-3b.paa);
-        rank = 0;
+        rank = -1;
     };
     class or4_sierzant {
         name = "OR-4 Sierżant (SGT)";
@@ -53,7 +53,7 @@ class polish {
     class or6_mlodszy_chorazy {
         name = "OR-6 Młodszy chorąży";
         icon = QPATHTOF(data\polish\OR-6.paa);
-        rank = 2;
+        rank = -1;
     };
     class or8_chorazy {
         name = "OR-8 Chorąży";

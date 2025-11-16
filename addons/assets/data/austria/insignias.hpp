@@ -4,7 +4,7 @@ class austria {
         QPATHTOF(data\austria\OR-1.paa),
         QPATHTOF(data\austria\OR-3.paa),
         QPATHTOF(data\austria\OR-5.paa),
-        QPATHTOF(data\austria\OF-1.paa),
+        QPATHTOF(data\austria\OF-1a.paa),
         QPATHTOF(data\austria\OF-2.paa),
         QPATHTOF(data\austria\OF-3.paa),
         QPATHTOF(data\austria\OF-9.paa)
