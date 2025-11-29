@@ -17,6 +17,9 @@
 
 params [["_unit", objNull]];
 
+// Only run for local units.
+if (!local _unit) exitWith {};
+
 (_unit getVariable ["etr_ranks_insigniaIcon", ["default_faction","default_rank"]]) params ["_faction", "_rank"];
 
 // Set rank icon.
