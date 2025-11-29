@@ -1,5 +1,6 @@
 name = "ETR Enhanced Ranks"
 prefix = "etr_ranks"
+mainprefix = "etr_ranks"
 author = "European Tactical Realism"
 mainprefix = "z"
 

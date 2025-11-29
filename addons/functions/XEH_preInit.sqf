@@ -100,5 +100,6 @@ for "_i" from 1 to (parseNumber GVARMAIN(regexSystem_amount)) do {
 
 // Run init function to handle icon/faction stuff.
 ["CAManBase", "initPost", LINKFUNC(init), true, [], true] call CBA_fnc_addClassEventHandler;
+["unit", LINKFUNC(init)] call CBA_fnc_addPlayerEventHandler;
 
 ADDON = true;
