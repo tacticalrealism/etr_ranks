@@ -7,7 +7,7 @@ class uk_royal_marines {
         QPATHTOF(data\uk_royal_marines\lieutenant.paa),
         QPATHTOF(data\uk_royal_marines\captain.paa),
         QPATHTOF(data\uk_royal_marines\major.paa),
-        QPATHTOF(data\uk_royal_marines\.paa)
+        QPATHTOF(data\uk_royal_marines\colonel.paa)
     };
 
     class default_rank {

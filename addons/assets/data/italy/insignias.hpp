@@ -5,9 +5,9 @@ class italy {
         QPATHTOF(data\italy\OR-3.paa),
         QPATHTOF(data\italy\OR-5.paa),
         QPATHTOF(data\italy\OF-1b.paa),
-        QPATHTOF(data\italy\OF-2.paa),
+        QPATHTOF(data\italy\OF-2a.paa),
         QPATHTOF(data\italy\OF-3.paa),
-        QPATHTOF(data\italy\OF-9.paa)
+        QPATHTOF(data\italy\OF-9a.paa)
     };
 
     class default_rank {

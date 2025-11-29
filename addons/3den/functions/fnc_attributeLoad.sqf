@@ -13,6 +13,8 @@
  *
  * Public: No
  */
+ 
+#pragma hemtt ignore_variables ["_value"]
 
 private _ctrlCombo = _this controlsGroupCtrl 98100;
 

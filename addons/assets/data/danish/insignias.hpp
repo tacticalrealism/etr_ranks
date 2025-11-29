@@ -3,7 +3,7 @@ class danish {
     values[] = {
         QPATHTOF(data\danish\OR-1.paa),
         QPATHTOF(data\danish\OR-3.paa),
-        QPATHTOF(data\danish\OR-5.paa),
+        QPATHTOF(data\danish\OR-5a.paa),
         QPATHTOF(data\danish\OF-1b.paa),
         QPATHTOF(data\danish\OF-2.paa),
         QPATHTOF(data\danish\OF-3.paa),

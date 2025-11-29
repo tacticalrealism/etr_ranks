@@ -2,12 +2,12 @@ class czech_republic {
     name = "Czech Republic Army";
     values[] = {
         QPATHTOF(data\blank.paa),
-        QPATHTOF(data\czech_republic\OR-3.paa),
-        QPATHTOF(data\czech_republic\OR-5.paa),
-        QPATHTOF(data\czech_republic\OF-1b.paa),
-        QPATHTOF(data\czech_republic\OF-2.paa),
-        QPATHTOF(data\czech_republic\OF-3.paa),
-        QPATHTOF(data\czech_republic\OF-5.paa)
+        QPATHTOF(data\czech_republic\vojin_OR-1.paa),
+        QPATHTOF(data\czech_republic\rotmistr_OR-5.paa),
+        QPATHTOF(data\czech_republic\porucik_OF-1.paa),
+        QPATHTOF(data\czech_republic\kapitan_OF-2.paa),
+        QPATHTOF(data\czech_republic\major_OF-3.paa),
+        QPATHTOF(data\czech_republic\plukovnik_OF-5.paa)
     };
 
     class default_rank {
@@ -74,7 +74,7 @@ class czech_republic {
     class nadporucik {
         name = "Nadporučík";
         icon = QPATHTOF(data\czech_republic\nadporucik_OF-1.paa);
-        rank = 5;
+        rank = -1;
     };
     class kapitan {
         name = "Kapitán";
@@ -84,7 +84,7 @@ class czech_republic {
     class major {
         name = "Major";
         icon = QPATHTOF(data\czech_republic\major_OF-3.paa);
-        rank = -1;
+        rank = 4;
     };
     class podplukovnik {
         name = "Podplukovník";
@@ -94,7 +94,7 @@ class czech_republic {
     class plukovnik {
         name = "Plukovník";
         icon = QPATHTOF(data\czech_republic\plukovnik_OF-5.paa);
-        rank = -1;
+        rank = 5;
     };
     class brigadni_general {
         name = "Brigádní generál";
