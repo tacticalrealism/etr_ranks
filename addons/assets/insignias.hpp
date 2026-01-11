@@ -45,4 +45,5 @@ class etr_ranks_insignias {
     #include "data/polish/insignias.hpp"
     #include "data/japan/insignias.hpp"
     #include "data/unsc/insignias.hpp"
+    #include "data/yugoslavia/insignias.hpp"
 };
