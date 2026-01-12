@@ -128,7 +128,7 @@ class yugoslavia {
     };
     class Marsal {
         name = "Maršal Jugoslavije (MAR)";
-        icon = QPATHTOF(data\yugoslavia\OF-10.paa);
+        icon = QPATHTOF(data\yugoslavia\Marshal.paa);
         rank = -1;
     };
 
