@@ -1,5 +1,5 @@
 class yugoslavia {
-    name = "Yugoslavija";
+    name = "Yugoslavia";
     values[] = {
         QPATHTOF(data\yugoslavia\OR-1.paa),
         QPATHTOF(data\yugoslavia\OR-3.paa),
