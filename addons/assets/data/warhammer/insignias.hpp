@@ -65,8 +65,8 @@ class warhammer {
         icon = QPATHTOF(data\warhammer\E-5b.paa);
         rank = 2;
     };
-    class e6a_stuff_sergeant {
-        name = "E-6a Stuff Sergeant";
+    class e6a_staff_sergeant {
+        name = "E-6a Staff Sergeant";
         icon = QPATHTOF(data\warhammer\E-6a.paa);
         rank = -1;
     };
